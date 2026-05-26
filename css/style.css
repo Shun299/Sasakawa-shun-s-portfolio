@@ -18,7 +18,7 @@
 
     --font-main: "Higure Gothic M", sans-serif;
 
-    --shadow-card: box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    --shadow-card: 0 0 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -41,6 +41,8 @@ h6 {
 
 img {
     max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 a {
@@ -87,8 +89,11 @@ ul {
     margin-bottom: 1.5rem;
 }
 
-.hero__img {
+
+.hero__image {
     position: relative;
+    width: 440px;
+    max-width: 100%;
 }
 
 .hero__img::after {
