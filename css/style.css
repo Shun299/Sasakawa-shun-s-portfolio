@@ -60,3 +60,38 @@ ul {
 .background--change {
     background-color: var(--color--bg-change);
 }
+
+.hero {
+    padding: 5rem;
+}
+
+.hero__inner {
+    display: grid;
+}
+
+.hero__body {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__greeting {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero__img::before {
+    content: "";
+    background-image: url(../images/pattern_hero.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
