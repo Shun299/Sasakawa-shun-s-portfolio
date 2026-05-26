@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Higure Gothic M";
+    src: url("../fonts/HigureGothic-Medium.ttf") format("truetype");
+}
+
+:root {
+    --color--bg: #FFFAF7;
+    --color--bg-change: #FFF2EC;
+    --color--text: #2B2B2B;
+    --color--button: #65B98C;
+    --color--button-text: #fff;
+
+    --font-main: "Higure Gothic M", sans-serif;
+
+    --shadow-card: box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color--text);
+    background-color: var(--color--bg);
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header__title {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.background--change {
+    background-color: var(--color--bg-change);
+}
