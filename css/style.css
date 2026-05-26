@@ -71,16 +71,15 @@ ul {
 
 .hero__body {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 440px;
     position: relative;
     align-items: center;
-    justify-content: center;
 }
 
 .hero__greeting {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -3%;
 }
 
 .hero__title {
@@ -88,10 +87,15 @@ ul {
     margin-bottom: 1.5rem;
 }
 
-.hero__img::before {
+.hero__img {
+    position: relative;
+}
+
+.hero__img::after {
     content: "";
-    background-image: url(../images/pattern_hero.svg);
     position: absolute;
+    background-image: url(../images/pattern_hero.svg);
+    z-index: 1;
     top: 0;
     left: 0;
 }
