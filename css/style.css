@@ -139,6 +139,12 @@ section {
     min-height: 55px;
     border-radius: 30px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .button--reverse {
@@ -166,6 +172,7 @@ section {
 }
 
 .section-heading__title {
+    display: inline-block;
     font-size: 2rem;
     position: relative;
 }
@@ -201,6 +208,12 @@ section {
     background-color: var(--color--button-text);
     border-radius: 15px;
     box-shadow: var(--shadow-card);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .work-card__image img {
