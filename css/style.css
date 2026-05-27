@@ -15,6 +15,10 @@
     --color--text: #2B2B2B;
     --color--button: #65B98C;
     --color--button-text: #fff;
+    --color--tag-html: #8565B9;
+    --color--tag-css: #B99A65;
+    --color--tag-js: #B96565;
+    --color--tag-figma: #65AAB9;
 
     --font-main: "Higure Gothic M", sans-serif;
 
@@ -61,6 +65,10 @@ ul {
 
 .background--change {
     background-color: var(--color--bg-change);
+}
+
+section {
+    padding: 5rem 0;
 }
 
 .hero {
@@ -127,11 +135,120 @@ ul {
     min-height: 55px;
     border-radius: 30px;
     text-align: center;
-    place-items: center;
 }
 
 .button--reverse {
     background-color: var(--color--button-text);
     color: var(--color--text);
     border: solid 2px var(--color--button);
+}
+
+.section-heading {
+    display: grid;
+    justify-items: center;
+}
+
+.section-heading__label,.work-card__tag {
+    display: inline-grid;
+    place-items: center;
+    text-align: center;
+    min-width: fit-content;
+    color: var(--color--button);
+    background-color: var(--color--button-text);
+    padding: .1rem 1.2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-card);
+}
+
+.section-heading__title {
+    font-size: 2rem;
+    position: relative;
+}
+
+.section-heading__title::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color--button);
+    bottom: -2px;
+    left: 0;
+}
+
+.works {
+    display: grid;
+    place-items: center;
+}
+
+.works__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 4rem 0;
+    padding: 0 1rem;
+}
+
+.work-card {
+    width: 400px;
+    padding: 1rem;
+    background-color: var(--color--button-text);
+    border-radius: 15px;
+    box-shadow: var(--shadow-card);
+}
+
+.work-card__image img {
+    border-radius: 15px;
+}
+
+.work-card__body {
+    display: grid;
+    gap: 1rem;
+}
+
+.work-card__tags {
+    display: flex;
+    font-size: 13px;
+    gap: .5rem;
+}
+
+.tag--html {
+    color: var(--color--tag-html);
+}
+
+.tag--css {
+    color: var(--color--tag-css);
+}
+
+.tag--js {
+    color: var(--color--tag-js);
+}
+
+.tag--figma {
+    color: var(--color--tag-figma);
+}
+
+.work-card__title {
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.work-card__title::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color--button);
+    bottom: -2px;
+    left: 0;
+}
+
+.work-card__buttons {
+    display: flex;
+    margin: 1.5rem 0 .5rem;
+    justify-content: space-evenly;
+}
+
+.work-card__button {
+    min-width: 170px;
 }
