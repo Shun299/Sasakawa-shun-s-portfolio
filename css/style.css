@@ -148,7 +148,8 @@ section {
     justify-items: center;
 }
 
-.section-heading__label,.work-card__tag {
+.section-heading__label,
+.work-card__tag {
     display: inline-grid;
     place-items: center;
     text-align: center;
