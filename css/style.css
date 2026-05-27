@@ -223,6 +223,8 @@ section {
 .work-card__body {
     display: grid;
     gap: 1rem;
+    height: 100%;
+    grid-template-rows: auto auto auto 1fr auto;
 }
 
 .work-card__tags {
@@ -265,8 +267,9 @@ section {
 
 .work-card__buttons {
     display: flex;
-    margin: 1.5rem 0 .5rem;
+    margin-top: 1.5rem;
     justify-content: space-evenly;
+    align-self: end;
 }
 
 .work-card__button {
