@@ -56,7 +56,7 @@ ul {
 
 .header__title {
     font-size: 2rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .background--change {
@@ -69,6 +69,7 @@ ul {
 
 .hero__inner {
     display: grid;
+    gap: 5rem;
 }
 
 .hero__body {
@@ -81,7 +82,7 @@ ul {
 .hero__greeting {
     position: absolute;
     top: 0;
-    left: -3%;
+    left: -30px;
 }
 
 .hero__title {
@@ -94,13 +95,43 @@ ul {
     position: relative;
     width: 440px;
     max-width: 100%;
+    z-index: 1;
 }
 
-.hero__img::after {
+.hero__image::after {
     content: "";
     position: absolute;
+    width: 400px;
+    height: 350px;
     background-image: url(../images/pattern_hero.svg);
-    z-index: 1;
-    top: 0;
-    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+    top: -24px;
+    right: -15px;
+}
+
+.hero__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.button {
+    background-color: var(--color--button);
+    color: var(--color--button-text);
+    display: inline-grid;
+    place-items: center;
+    min-width: 200px;
+    min-height: 55px;
+    border-radius: 30px;
+    text-align: center;
+    place-items: center;
+}
+
+.button--reverse {
+    background-color: var(--color--button-text);
+    color: var(--color--text);
+    border: solid 2px var(--color--button);
 }
