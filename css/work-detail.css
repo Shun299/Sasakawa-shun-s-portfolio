@@ -1,0 +1,101 @@
+.work-detail-hero {
+    padding: 5rem 2.5rem;
+}
+
+.work-detail-hero__body {
+    grid-template-columns: 1fr 600px;
+}
+
+/* .hero__top--button {
+    position: absolute;
+    top: -70px;
+    left: 0;
+}
+
+.top--button__inner {
+    position: relative;
+}
+
+.top--button__text {
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
+.work-detail-hero__image {
+    width: 600px;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 2px solid var(--color--text);
+}
+
+.work-detail-hero__image img {
+    width: 100%;
+}
+
+.work-detail-hero__sentence {
+    display: grid;
+    gap: 2rem;
+}
+
+.work-detail-hero__title {
+    margin: 0;
+}
+
+.work-detail-hero__buttons {
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.work-detail-hero__button {
+    min-width: 250px;
+    min-height: 55px;
+}
+
+/* 課題セクション */
+.work-detail__section-heading {
+    position: relative;
+    width: fit-content;
+    grid-template-columns: auto auto;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 2.5rem;
+}
+
+.work-detail__section-heading::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: calc(100% + 16px);
+    background-color: var(--color--button);
+    bottom: -10px;
+    left: -8px;
+}
+
+.work-detail__section-heading--title {
+    font-size: 2rem;
+}
+
+.work-overview__inner {
+    display: grid;
+    margin: 6rem 6rem 0;
+    gap: 2.5rem;
+    place-content: center;
+}
+
+.work-overview__card {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.work-overview__card--description {
+    display: grid;
+    gap: .5rem;
+}
+
+.work-overview__card--title {
+    font-size: 1.5rem;
+}

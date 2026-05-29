@@ -110,7 +110,7 @@ section {
     z-index: 1;
 }
 
-.hero__image::after {
+.top-hero__image::after {
     content: "";
     position: absolute;
     width: 400px;
@@ -217,8 +217,13 @@ section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.work-card__image img {
+.work-card__image {
     border-radius: 15px;
+    overflow: hidden;
+}
+
+.work-card__image img {
+    width: 100%;
 }
 
 .work-card__body {
