@@ -89,13 +89,11 @@
     grid-template-columns: 100px 1fr;
     gap: 2rem;
     align-items: center;
-    border-bottom: 2px solid #C3C3C3;
-    padding-bottom: 2rem;
 }
 
-.work-problem__card:last-child {
-    border-bottom: none;
-    padding-bottom: 0rem;
+.work-problem__card:not(:last-child) {
+    border-bottom: 2px solid #C3C3C3;
+    padding-bottom: 2rem;
 }
 
 .work-problem__card--description {
@@ -105,4 +103,39 @@
 
 .work-problem__card--title {
     font-size: 1.5rem;
+}
+
+/* 解決方針セクション */
+
+.work-solution__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    gap: 1.5rem;
+    place-content: center;
+    margin-top: 6rem;
+}
+
+.work-solution__card {
+    display: grid;
+    position: relative;
+    background-color: var(--color--button-text);
+    gap: 1rem;
+    padding: 2rem;
+    min-width: 450px;
+    min-height: 250px;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid #C3C3C3;
+}
+
+.work-solution__card--number {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1.5rem;
+    color: var(--color--button);
+}
+
+.work-solution__card--title {
+    font-size: 2.25rem;
 }
