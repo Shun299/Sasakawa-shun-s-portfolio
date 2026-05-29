@@ -137,9 +137,10 @@ section {
     place-items: center;
     min-width: 200px;
     min-height: 55px;
-    border-radius: 30px;
+    border-radius: 500px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: solid 2px #52A377;
 }
 
 .button:hover {
