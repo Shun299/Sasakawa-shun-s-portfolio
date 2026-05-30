@@ -284,7 +284,6 @@
 
 .work-summary__info {
     display: grid;
-    width: 600px;
     height: fit-content;
     padding: 2rem;
     background-color: var(--color--button-text);
@@ -304,8 +303,7 @@
 
 .work-summary__item {
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 1rem;
+    grid-template-columns: 120px 1fr;
 }
 
 .work-summary__item:not(:last-child) {
@@ -329,4 +327,19 @@
     justify-content: center;
     padding: 3rem;
     gap: 2.5rem;
+}
+
+@media (max-width: 960px) {
+    .work-detail-hero__body,
+    .work-summary__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .work-detail-hero__image {
+        width: 100%;
+    }
+
+    .work-summary__info {
+        width: auto;
+    }
 }
