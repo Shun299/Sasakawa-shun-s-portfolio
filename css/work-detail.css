@@ -343,3 +343,82 @@
         width: auto;
     }
 }
+
+@media (max-width: 640px) {
+    .pc-br {
+        display: none;
+    }
+
+    .work-detail__section-heading {
+        grid-template-columns: minmax(0,1fr);
+        margin: 0 2rem;
+    }
+
+    .work-problem__inner {
+        margin: 6rem 3rem 0;
+    }
+
+    .work-problem__card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .work-problem__card--icon {
+        margin: 0 auto;
+    }
+
+    .work-solution__inner {
+        grid-template-columns: minmax(0, 450px);
+        padding: 0 2rem;
+    }
+
+    .work-solution__card {
+        padding: 2rem 1rem;
+    }
+
+    .work-design-feature__inner {
+        grid-template-columns: minmax(0, 390px);
+        padding: 0 2rem;
+    }
+
+    .work-design-feature__color-item {
+        gap: 1rem;
+    }
+
+    .work-ingenuity__inner {
+        margin: 6rem 0 0;
+        padding: 0 2rem;
+    }
+    
+    .work-ingenuity__card {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .work-ingenuity__card--img {
+        width: 300px;
+    }
+    
+    .work-summary__inner {
+        padding: 0 2rem;
+    }
+
+    .work-summary__info {
+        gap: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .work-summary__item {
+        grid-template-columns: 1fr;
+        gap: .5rem;
+    }
+
+    .work-summary__description {
+        margin-left: 1rem;
+    }
+
+    .work-detail__buttons {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

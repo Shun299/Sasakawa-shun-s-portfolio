@@ -369,7 +369,7 @@ section {
     text-align: center;
     padding: .5rem 0;
 }
-/* Responsive layout adjustments */
+
 @media (max-width: 960px) {
     .header__title {
         display: inline-block;
