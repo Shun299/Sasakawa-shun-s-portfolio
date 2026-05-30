@@ -47,7 +47,8 @@
     gap: 2rem;
 }
 
-.work-detail-hero__button {
+.work-detail-hero__button,
+.work-detail__button {
     min-width: 250px;
     min-height: 55px;
 }
@@ -268,4 +269,64 @@
 .work-ingenuity__card:not(:last-child) {
     border-bottom: 2px solid #C3C3C3;
     padding-bottom: 2rem;
+}
+
+/* 制作情報・振り返りセクション */
+
+.work-summary__inner {
+    display: grid;
+    grid-template-columns: 600px minmax(0, 520px);
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 6rem;
+    padding: 0 3rem;
+}
+
+.work-summary__info {
+    display: grid;
+    width: 600px;
+    height: fit-content;
+    padding: 2rem;
+    background-color: var(--color--button-text);
+    border-radius: 15px;
+    border: 2px solid #C3C3C3;
+}
+
+.work-summary__info-title,
+.work-summary__review-title {
+    font-size: 1.5rem;
+}
+
+.work-summary__list {
+    display: grid;
+    gap: 1rem;
+}
+
+.work-summary__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+.work-summary__item:not(:last-child) {
+    border-bottom: 2px solid #C3C3C3;
+    padding-bottom: 1rem;
+}
+
+.work-summary__info-title {
+    text-align: center;
+}
+
+.work-summary__review {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 1rem;
+    align-items: end;
+}
+
+.work-detail__buttons {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    gap: 2.5rem;
 }
