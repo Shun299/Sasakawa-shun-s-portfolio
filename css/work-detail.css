@@ -56,9 +56,8 @@
 .work-detail__section-heading {
     position: relative;
     width: fit-content;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    max-width: 100%;
     margin: 0 auto;
     gap: 2.5rem;
 }
@@ -109,7 +108,7 @@
 
 .work-solution__inner {
     display: grid;
-    grid-template-columns: repeat(2, 450px);
+    grid-template-columns: repeat(2, minmax(0, 450px));
     gap: 1.5rem;
     place-content: center;
     margin-top: 6rem;
@@ -121,7 +120,6 @@
     background-color: var(--color--button-text);
     gap: 1rem;
     padding: 2rem;
-    min-width: 450px;
     min-height: 250px;
     text-align: center;
     border-radius: 15px;
@@ -138,4 +136,81 @@
 
 .work-solution__card--title {
     font-size: 2.25rem;
+}
+
+/* デザインのポイントセクション */
+
+.work-design-feature__inner {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6rem;
+    width: 100%;
+}
+
+.work-design-feature__card {
+    display: grid;
+    min-height: 400px;
+    width: 390px;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    justify-items: center;
+    background-color: var(--color--button-text);
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid #C3C3C3;
+}
+
+.work-design-feature__color-palette {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.work-design-feature__color-item {
+    display: grid;
+    justify-items: center;
+}
+
+.work-design-feature__color {
+    display: block;
+    width: 4.4rem;
+    aspect-ratio: 1;
+    border-radius: 50px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.work-design-feature__color--bg {
+    background-color: #F5F1E8;
+}
+
+.work-design-feature__color--accent {
+    background-color: #209F4B;
+}
+
+.work-design-feature__color--text {
+    background-color: #2B2B2B;
+}
+
+.work-design-feature__color-name {
+    line-height: 1.5;
+}
+
+.work-design-feature__card--img {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #C3C3C3;
+}
+
+.work-design-feature__card--img img {
+    width: 100%;
+}
+
+.work-design-feature__card--logo {
+    width: 140px;
+    aspect-ratio: 1;
+}
+
+.work-design-feature__card--title {
+    font-size: 1.5rem;
 }
