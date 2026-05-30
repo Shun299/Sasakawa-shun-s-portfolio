@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,6 +33,7 @@ body {
     background-color: var(--color--bg);
     line-height: 1.8;
     letter-spacing: 0.1em;
+    margin: 0;
 }
 
 h1,
@@ -83,7 +86,7 @@ section {
 .hero__body {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr 440px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 440px);
     position: relative;
     align-items: center;
 }
@@ -126,6 +129,7 @@ section {
 
 .hero__buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
 }
@@ -195,6 +199,7 @@ section {
 
 .works__list {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(3, minmax(0, 400px));
     justify-content: center;
     gap: 1rem;
@@ -235,6 +240,7 @@ section {
 
 .work-card__tags {
     display: flex;
+    flex-wrap: wrap;
     font-size: 13px;
     gap: .5rem;
 }
@@ -273,6 +279,8 @@ section {
 
 .work-card__buttons {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin-top: 1.5rem;
     justify-content: space-evenly;
     align-self: end;
@@ -304,7 +312,7 @@ section {
 
 .skills__list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0,200px));
+    grid-template-columns: repeat(3, minmax(0, 200px));
     place-content: center;
     gap: 2rem;
     padding: 5rem;
@@ -360,4 +368,254 @@ section {
 .footer {
     text-align: center;
     padding: .5rem 0;
+}
+/* Responsive layout adjustments */
+@media (max-width: 960px) {
+    .header__title {
+        display: inline-block;
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+
+    .hero {
+        padding: 5rem 2rem;
+    }
+
+    .hero__inner {
+        gap: 3rem;
+    }
+
+    .hero__body {
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+        text-align: center;
+    }
+
+    .hero__sentence,
+    .profile__body,
+    .contact__body {
+        min-width: 0;
+    }
+
+    .hero__greeting {
+        left: 0;
+        width: min(180px, 45vw);
+    }
+
+    .hero__title {
+        font-size: clamp(2rem, 5vw, 2.5rem);
+    }
+
+    .hero__image {
+        width: min(440px, 100%);
+    }
+
+    .top-hero__image::after {
+        width: min(400px, 92vw);
+        height: min(350px, 72vw);
+        right: 0;
+    }
+
+    .hero__buttons {
+        flex-wrap: wrap;
+        gap: 1rem 1.5rem;
+    }
+
+    .button {
+        min-width: min(200px, 100%);
+        padding: 0.5rem 1.5rem;
+    }
+
+    .works__list {
+        grid-template-columns: repeat(2, minmax(0, 400px));
+        width: 100%;
+        max-width: 860px;
+        gap: 1.5rem;
+    }
+
+    .work-card {
+        max-width: none;
+    }
+
+    .work-card__buttons {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .profile__card {
+        grid-template-columns: minmax(120px, 180px) minmax(0, 1fr);
+        margin: 4rem 2rem;
+    }
+
+    .skills__list {
+        grid-template-columns: repeat(2, minmax(0, 220px));
+        padding: 4rem 2rem;
+    }
+
+    .skills__item {
+        width: 100%;
+        max-width: none;
+    }
+
+    .contact__list {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        line-height: 1.7;
+        letter-spacing: 0.06em;
+    }
+
+    .header__title {
+        font-size: 1.1rem;
+        margin: 0.75rem 1rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
+    .section-heading__title {
+        font-size: 1.6rem;
+    }
+
+    .hero {
+        padding: 4rem 1rem;
+    }
+
+    .hero__inner {
+        gap: 2.5rem;
+    }
+
+    .hero__body {
+        gap: 2rem;
+    }
+
+    .hero__greeting {
+        position: static;
+        width: min(160px, 55vw);
+        margin: 0 auto 1rem;
+    }
+
+    .hero__title {
+        font-size: clamp(1.6rem, 8vw, 2rem);
+        line-height: 1.5;
+    }
+
+    .hero__text {
+        font-size: 0.95rem;
+        line-height: 1.9;
+        text-align: left;
+    }
+
+    .hero__image {
+        width: min(360px, 100%);
+    }
+
+    .top-hero__image::after {
+        width: 100%;
+        height: 100%;
+        top: -5%;
+        right: 0;
+    }
+
+    .hero__buttons,
+    .work-card__buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button,
+    .work-card__button {
+        width: 100%;
+        min-width: 0;
+        min-height: 50px;
+    }
+
+    .works__list {
+        grid-template-columns: minmax(0, 1fr);
+        margin: 3rem 0;
+        padding: 0 1rem;
+    }
+
+    .work-card__tags {
+        flex-wrap: wrap;
+    }
+
+    .profile__card {
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+        text-align: left;
+        gap: 2rem;
+        margin: 3rem 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .profile__icon {
+        width: min(180px, 55vw);
+    }
+
+    .profile__name,
+    .profile__meta {
+        text-align: center;
+    }
+
+    .profile__name {
+        font-size: 1.6rem;
+    }
+
+    .profile__meta {
+        margin-bottom: 2rem;
+    }
+
+    .skills__list {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1rem;
+        padding: 3rem 1rem;
+    }
+
+    .skills__item {
+        justify-content: center;
+        min-height: 58px;
+    }
+
+    .contact__list {
+        margin: 3rem 0;
+        padding: 0 1rem;
+        gap: 1.5rem;
+    }
+
+    .contact__item {
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+
+    .contact__icon {
+        height: 56px;
+    }
+
+    .contact__title {
+        font-size: 1.25rem;
+    }
+
+    .contact__link {
+        overflow-wrap: anywhere;
+    }
+
+    .footer {
+        padding: 1rem;
+        font-size: 0.85rem;
+    }
 }
