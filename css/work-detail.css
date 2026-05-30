@@ -160,6 +160,7 @@
     text-align: center;
     border-radius: 15px;
     border: 2px solid #C3C3C3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .work-design-feature__visual {
@@ -222,4 +223,49 @@
 
 .work-design-feature__card--title {
     font-size: 1.5rem;
+}
+
+/* 実装・工夫した点セクション */
+
+.work-ingenuity__inner {
+    display: grid;
+    justify-content: center;
+    margin: 6rem;
+    gap: 2rem;
+}
+
+.work-ingenuity__card {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 3.75rem;
+}
+
+.work-ingenuity__card--img {
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #C3C3C3;
+}
+
+.work-ingenuity__card--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-ingenuity__card-body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 1rem;
+    align-items: end;
+}
+
+.work-ingenuity__card--title {
+    font-size: 24px;
+}
+
+.work-ingenuity__card:not(:last-child) {
+    border-bottom: 2px solid #C3C3C3;
+    padding-bottom: 2rem;
 }
