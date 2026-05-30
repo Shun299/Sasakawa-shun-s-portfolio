@@ -141,16 +141,18 @@
 /* デザインのポイントセクション */
 
 .work-design-feature__inner {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 390px));
+    justify-content: center;
+    gap: 1.5rem;
     margin-top: 6rem;
     width: 100%;
 }
 
 .work-design-feature__card {
     display: grid;
+    grid-template-rows: 150px auto 1fr;
     min-height: 400px;
-    width: 390px;
     gap: 1rem;
     padding: 2rem 1rem;
     justify-items: center;
@@ -158,6 +160,13 @@
     text-align: center;
     border-radius: 15px;
     border: 2px solid #C3C3C3;
+}
+
+.work-design-feature__visual {
+    display: grid;
+    place-items: center;
+    height: 150px;
+    width: 100%;
 }
 
 .work-design-feature__color-palette {
@@ -174,7 +183,7 @@
     display: block;
     width: 4.4rem;
     aspect-ratio: 1;
-    border-radius: 50px;
+    border-radius: 50%;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 
