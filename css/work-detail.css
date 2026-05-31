@@ -246,13 +246,20 @@
 }
 
 .work-design-feature__color-palette {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 4.4rem);
     gap: 1.5rem;
+}
+
+.work-design-feature__color-palette--4col {
+    grid-template-columns: repeat(4, 4.4rem);
+    gap: 1rem;
 }
 
 .work-design-feature__color-item {
     display: grid;
     justify-items: center;
+    gap: .5rem;
 }
 
 .work-design-feature__color {
@@ -476,6 +483,21 @@
     .work-design-feature__inner {
         grid-template-columns: minmax(0, 390px);
         padding: 0 2rem;
+    }
+    
+    .work-design-feature__card {
+        grid-template-rows: auto auto 1fr;
+        height: fit-content;
+    }
+
+    .work-design-feature__visual {
+        height: auto;
+        min-height: 150px;
+    }
+
+    .work-design-feature__color-palette--4col {
+        grid-template-columns: repeat(2, 4.4rem);
+        justify-content: center;
     }
 
     .work-design-feature__color-item {
