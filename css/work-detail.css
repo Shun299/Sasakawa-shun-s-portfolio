@@ -86,7 +86,7 @@
 
 .work-overview__intro-title,
 .work-overview__info-title,
-.work-summary__review-title {
+.work-review__review-title {
     font-size: 1.5rem;
 }
 
@@ -332,7 +332,7 @@
 
 /* 振り返りセクション */
 
-.work-summary__inner {
+.work-review__inner {
     display: grid;
     justify-content: center;
     gap: 3rem;
@@ -342,7 +342,7 @@
     border-left: 2px solid #C3C3C3;
 }
 
-.work-summary__title {
+.work-review__title {
     font-size: 1.5rem;
     color: #307D54;
     margin-bottom: .5rem;
@@ -357,7 +357,7 @@
 
 @media (max-width: 960px) {
     .work-detail-hero__body,
-    .work-summary__inner {
+    .work-overview__inner {
         grid-template-columns: 1fr;
     }
 
@@ -365,7 +365,7 @@
         width: 100%;
     }
 
-    .work-summary__info {
+    .work-overview__info {
         width: auto;
     }
 }
@@ -445,7 +445,7 @@
         width: 100%;
     }
     
-    .work-summary__inner {
+    .work-review__inner {
         padding: 1rem 2rem;
         margin: 6rem 2rem;
     }
