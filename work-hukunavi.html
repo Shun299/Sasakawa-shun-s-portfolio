@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ふくナビ | Sasakawa Shun's Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/work-detail.css">
+        <script src="js/main.js"></script>
+        <meta name="description" content="架空の和菓子屋「甘彩堂」のブランドサイト兼ECサイト制作についてまとめた作品詳細ページです。課題設定、デザインの工夫、実装内容、制作を通して学んだことを掲載しています。">
+    </head>
+    <body>
+        <header class="header"><a href="index.html"><span class="header__title">Sasakawa Shun's Portfolio</span></a></header>
+        <main>
+            <section class="hero background--change work-detail-hero" id="hero">
+                <div class="hero__inner">
+                    <div class="hero__body work-detail-hero__body">
+                        <!-- <a class="hero__top--button" href="index.html">
+                            <div class="top--button__inner">
+                                <span class="top--button__text">Top</span>
+                                <img src="images/Arrow 1.svg" alt="">
+                            </div>
+                        </a> -->
+                        <div class="hero__sentence work-detail-hero__sentence">
+                            <h1 class="hero__title work-detail-hero__title">ふくナビ</h1>
+                            <p class="hero__text">目的地が決まっていない状態でも、自分の興味に合わせて観光スポットを見つけられるWebアプリです。<br class="pc-br">
+                                キーワード検索ではなく、分類を段階的に選択していくことで、<br class="pc-br">
+                                「探す」だけでなく「選びながら考える」体験を目指しました。
+                            </p>
+                            <div class="work-card__tags">
+                                <span class="work-card__tag tag--html">HTML</span>
+                                <span class="work-card__tag tag--css">CSS</span>
+                                <span class="work-card__tag tag--js">JavaScript</span>
+                            </div>
+                            <div class="hero__buttons work-detail-hero__buttons">
+                                <a class="button button--reverse work-detail-hero__button" href="https://shun299.github.io/hukuiken_kankou-app/" target="_blank" rel="noopener noreferrer">作品のサイトへ</a>
+                                <a class="button button--reverse work-detail-hero__button" href="https://github.com/Shun299/hukuiken_kankou-app" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+                            </div>
+                        </div>
+                        <div class="hero__image work-detail-hero__image"><img src="images/hukunavi.png" alt="ふくナビのスクリーンショット"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="work-detail work-overview">
+                <div class="section-heading work-detail__section-heading">
+                    <h2 class="work-detail__section-heading--title">作品概要</h2>
+                    <p>福井県の観光スポットを、興味から見つける</p>
+                </div>
+                <div class="work-overview__inner">
+                    <div class="work-overview__intro">
+                        <h3 class="work-overview__intro-title">作品紹介</h3>
+                        <p class="work-overview__intro-text">ふくナビは、福井県の観光スポットを紹介するWebアプリです。</p>
+                        <p class="work-overview__intro-text">一般的な観光サイトでは、行きたい場所やキーワードが決まっていることを前提にした検索が多く、土地に詳しくない利用者にとっては使いづらい場合があります。</p>
+                        <p class="work-overview__intro-text">そこで本作品では、利用者が大分類・中分類・小分類を順番に選択しながら、自分の興味に合う観光スポットを見つけられる構成にしました。</p>
+                        <p class="work-overview__intro-text">単なる情報検索ではなく、旅行前に行き先を考える時間そのものを楽しめるよう意識しています。</p>
+                    </div>
+                    <div class="work-overview__info">
+                        <h3 class="work-overview__info-title">制作情報</h3>
+                        <dl class="work-overview__list">
+                            <div  class="work-overview__item">
+                                <dt class="work-overview__term">制作期間</dt>
+                                <dd class="work-overview__description">5日</dd>
+                            </div>
+                            <div  class="work-overview__item">
+                                <dt class="work-overview__term">担当範囲</dt>
+                                <dd class="work-overview__description">企画 / UI設計 / 実装</dd>
+                            </div>
+                            <div  class="work-overview__item">
+                                <dt class="work-overview__term">使用技術</dt>
+                                <dd class="work-overview__description">HTML / CSS / JavaScript</dd>
+                            </div>
+                            <div  class="work-overview__item">
+                                <dt class="work-overview__term">制作形態</dt>
+                                <dd class="work-overview__description">インターンシップにて、企業の方のアドバイスを受けながら制作</dd>
+                            </div>
+                            <div  class="work-overview__item">
+                                <dt class="work-overview__term">対応状況</dt>
+                                <dd class="work-overview__description">PC版を中心に制作 / <br>スマートフォンにも対応済み</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+            <section class="work-detail background--change work-problem">
+                <div class="section-heading work-detail__section-heading">
+                    <h2 class="work-detail__section-heading--title">課題</h2>
+                    <p>目的地が決まっていない人には、観光サイトが使いづらい
+                    </p>
+                </div>
+                <div class="work-problem__inner">
+                    <div class="work-problem__card">
+                        <div class="work-problem__card--icon"><img src="images/search.svg" alt=""></div>
+                        <div class="work-problem__card--description">
+                            <h3 class="work-problem__card--title">キーワード検索が前提になっている</h3>
+                            <p class="work-problem__card--text">観光サイトでは、施設名や地名を入力して探す形式が多く、<br class="pc-br">
+                                利用者があらかじめ目的地を知っている必要があります。<br>
+                                そのため、土地に詳しくない人にとっては、何を検索すればよいか分かりにくいという課題がありました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work-problem__card">
+                        <div class="work-problem__card--icon"><img src="images/pin.svg" alt=""></div>
+                        <div class="work-problem__card--description">
+                            <h3 class="work-problem__card--title">定番スポットに情報が偏りやすい</h3>
+                            <p class="work-problem__card--text">有名な観光地は見つけやすい一方で、自分の興味に合った場所や、<br class="pc-br">まだ知らない観光スポットに出会いにくいと感じました。<br>
+                                観光地を「名前」ではなく「興味」から探せる仕組みが必要だと考えました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work-problem__card">
+                        <div class="work-problem__card--icon"><img src="images/question.svg" alt=""></div>
+                        <div class="work-problem__card--description">
+                            <h3 class="work-problem__card--title">位置関係が分かりづらい</h3>
+                            <p class="work-problem__card--text">一覧だけで観光スポットを表示すると、実際の場所や距離感を把握しづらくなります。<br class="pc-br">
+                                旅行計画に活かしやすくするため、一覧情報と地図を同時に確認できる構成が必要だと考えました。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="work-detail work-solution">
+                <div class="section-heading work-detail__section-heading">
+                    <h2 class="work-detail__section-heading--title">解決策</h2>
+                    <p>段階的な選択で、興味に合う観光地へ導く
+                    </p>
+                </div>
+                <div class="work-solution__inner">
+                    <div class="work-solution__card">
+                        <span class="work-solution__card--number">01</span>
+                        <h3 class="work-solution__card--title">分類を選ぶ検索体験</h3>
+                        <p>大分類/中分類/小分類を順番に選択することで、目的地が明確でない状態でも観光スポットを絞り込めるようにしました。<br class="pc-br">
+                            「歴史・文化」「自然」「温泉・健康」など、利用者の興味を起点に行き先を考えられる設計にしています。
+                        </p>
+                    </div>
+                    <div class="work-solution__card">
+                        <span class="work-solution__card--number">02</span>
+                        <h3 class="work-solution__card--title">条件を引き継ぐページ遷移</h3>
+                        <p>TOPページで選択した条件は、クエリパラメータとして検索結果ページへ受け渡す仕組みにしました。<br class="pc-br">
+                            画面が切り替わっても選択状態が反映されるため、検索の流れが途切れないようにしています。
+                        </p>
+                    </div>
+                    <div class="work-solution__card">
+                        <span class="work-solution__card--number">03</span>
+                        <h3 class="work-solution__card--title">一覧と地図の同時表示</h3>
+                        <p>検索結果ページでは、条件に合う観光スポットの一覧と地図を同時に表示しました。<br class="pc-br">
+                            スポットの情報だけでなく、位置関係や距離感も直感的に把握できるようにしています。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="work-detail background--change work-design-feature">
+                <div class="section-heading work-detail__section-heading">
+                    <h2 class="work-detail__section-heading--title">デザイン・UI設計</h2>
+                    <p>旅行前のわくわく感を伝える、明るく親しみやすいUIを意識しました。
+                    </p>
+                </div>
+                <div class="work-design-feature__inner">
+                    <div class="work-design-feature__card hover-lift">
+                        <div class="work-design-feature__visual">
+                            <div class="work-design-feature__color-palette">
+                                <div class="work-design-feature__color-item">
+                                    <span class="work-design-feature__color work-design-feature__color--bg"></span>
+                                    <span class="work-design-feature__color-name">bg-<br>color</span>
+                                </div>
+                                <div class="work-design-feature__color-item">
+                                    <span class="work-design-feature__color work-design-feature__color--accent"></span>
+                                    <span class="work-design-feature__color-name">accent-<br>color</span>
+                                </div>
+                                <div class="work-design-feature__color-item">
+                                    <span class="work-design-feature__color work-design-feature__color--text"></span>
+                                    <span class="work-design-feature__color-name">text-<br>color</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="work-design-feature__card--title">落ち着いた配色</h3>
+                        <p class="work-design-feature__card--text">デザイン面では、旅行前の楽しさや親しみやすさを感じられるよう暖色を基調にしました。<br class="pc-br">
+                        タイトルカラーにはオレンジを使用し、明るさや活発さを表現しています。<br class="pc-br">
+                        </p>
+                    </div>
+                    <div class="work-design-feature__card hover-lift">
+                        <div class="work-design-feature__visual">
+                            <div class="work-design-feature__card--img"><img src="images/margin-screenshot.png" alt="余白のスクリーンショット"></div>
+                        </div>
+                        <h3 class="work-design-feature__card--title">分かりやすいUI</h3>
+                        <p class="work-design-feature__card--text">観光案内としての分かりやすさを重視し、操作部分はできるだけシンプルに整理しました。<br class="pc-br">
+                            選択肢を段階的に表示することで、利用者が迷いすぎず、自然な流れで検索できるようにしています。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="work-detail work-ingenuity">
+                <div class="section-heading work-detail__section-heading">
+                    <h2 class="work-detail__section-heading--title">実装・工夫した点</h2>
+                    <p>JavaScriptで検索条件を管理し、画面間で状態を保持しました。
+                    </p>
+                </div>
+                <div class="work-ingenuity__inner">
+                    <div class="work-ingenuity__card">
+                        <div class="work-ingenuity__card--img"><img src="images/filter-screenshot.png" alt="商品カードの絞り込み機能のスクリーンショット"></div>
+                        <div class="work-ingenuity__card-body">
+                            <h3 class="work-ingenuity__card--title">CSVデータをもとに分類構造を整理</h3>
+                            <p class="work-ingenuity__card-text">観光スポットの情報をCSVデータとして扱い、分類ごとに整理しました。<br>
+                                データをもとに表示内容を切り替えることで、条件に応じた検索結果を表示できるようにしています。<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work-ingenuity__card">
+                        <div class="work-ingenuity__card--img"><img src="images/hit-screenshot.png" alt="ヒット件数のスクリーンショット"></div>
+                        <div class="work-ingenuity__card-body">
+                            <h3 class="work-ingenuity__card--title">クエリパラメータによる条件の受け渡し</h3>
+                            <p class="work-ingenuity__card-text">TOPページで選択した条件をURLに含め、検索結果ページで読み取る仕組みを実装しました。<br>
+                                これにより、ページ遷移後も選択内容に応じた結果を表示できるようにしています。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work-ingenuity__card">
+                        <div class="work-ingenuity__card--img"><img src="images/pages-screenshot.png" alt="複数ページのスクリーンショット"></div>
+                        <div class="work-ingenuity__card-body">
+                            <h3 class="work-ingenuity__card--title">地図とカード表示の組み合わせ</h3>
+                            <p class="work-ingenuity__card-text">検索結果では、観光スポットのカード表示と地図表示を組み合わせました。<br>
+                                視覚的に場所を把握しながら、各スポットの概要も確認できる構成にしています。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="work-detail background--change work-review">
+                <div class="section-heading work-detail__section-heading">
+                    <h2 class="work-detail__section-heading--title">振り返り</h2>
+                    <p>制作を通して、学んだことと今後の展望をまとめました。</p>
+                </div>
+                <div class="work-review__inner">
+                    <div class="work-review__learned">
+                        <h3 class="work-review__title">学んだこと</h3>
+                        <p class="work-review__text">この制作を通して、目的地が決まっていないユーザーに対して、<br class="pc-br">
+                            どのような順番で情報を提示すれば、行き先を選びやすくなるのかというユーザー目線のUIを考える大切さを学びました。<br class="pc-br">
+                            また、クエリパラメータを用いて画面間で検索条件を引き継ぐ仕組みについて理解を深めました。
+                        </p>
+                    </div>
+                    <div class="work-review__future">
+                        <h3 class="work-review__title">今後の展望</h3>
+                        <p class="work-review__text">現在は容量や実装面の都合により、検索結果に表示される画像はサンプル画像を使用しています。<br>
+                            今後は各観光スポットに対応した画像を表示できる仕組みを導入し、一覧を見た段階で場所の雰囲気や魅力が伝わるように改善したいです。<br>
+                            また、地図やスポット情報とのつながりをより分かりやすくし、旅行前の行き先選びから計画づくりまで支えられるアプリに近づけていきたいです。<br>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="work-detail__buttons">
+                <a class="button work-detail__button" href="index.html">トップページへ</a>
+                <a class="button work-detail__button" href="index.html#works">作品の一覧へ</a>
+            </div>
+        </main>
+        <footer class="footer background--change">@ 2026 Sasakawa Shun's Portfolio</footer>
+    </body>
+</html>
