@@ -53,6 +53,64 @@
     min-height: 55px;
 }
 
+/* 作品概要セクション */
+
+.work-overview__inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 5rem;
+    padding: 0  5rem 5rem;
+}
+
+.work-overview__intro {
+    display: grid;
+    gap: 2rem;
+    height: fit-content;
+    padding: 2rem;
+    background-color: var(--color--button-text);
+    border-radius: 15px;
+    border: 2px solid #C3C3C3;
+}
+
+.work-overview__intro-title {
+    text-align: center;
+}
+
+.work-overview__info {
+    display: grid;
+    height: fit-content;
+}
+
+.work-overview__intro-title,
+.work-overview__info-title,
+.work-summary__review-title {
+    font-size: 1.5rem;
+}
+
+.work-overview__list {
+    display: grid;
+    gap: 1rem;
+}
+
+.work-overview__item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+}
+
+.work-overview__item:not(:last-child) {
+    border-bottom: 2px solid #C3C3C3;
+    padding-bottom: 1rem;
+}
+
+.work-overview__info-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
 /* 課題セクション */
 .work-detail__section-heading {
     position: relative;
@@ -272,55 +330,22 @@
     padding-bottom: 2rem;
 }
 
-/* 制作情報・振り返りセクション */
+/* 振り返りセクション */
 
 .work-summary__inner {
     display: grid;
-    grid-template-columns: 600px minmax(0, 520px);
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
     margin-top: 6rem;
-    padding: 0 3rem;
+    padding: 1rem 0;
+    margin: 6rem 6rem 0;
+    border-left: 2px solid #C3C3C3;
 }
 
-.work-summary__info {
-    display: grid;
-    height: fit-content;
-    padding: 2rem;
-    background-color: var(--color--button-text);
-    border-radius: 15px;
-    border: 2px solid #C3C3C3;
-}
-
-.work-summary__info-title,
-.work-summary__review-title {
+.work-summary__title {
     font-size: 1.5rem;
-}
-
-.work-summary__list {
-    display: grid;
-    gap: 1rem;
-}
-
-.work-summary__item {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-}
-
-.work-summary__item:not(:last-child) {
-    border-bottom: 2px solid #C3C3C3;
-    padding-bottom: 1rem;
-}
-
-.work-summary__info-title {
-    text-align: center;
-}
-
-.work-summary__review {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    gap: 1rem;
-    align-items: end;
+    color: #307D54;
+    margin-bottom: .5rem;
 }
 
 .work-detail__buttons {
@@ -353,6 +378,25 @@
     .work-detail__section-heading {
         grid-template-columns: minmax(0,1fr);
         margin: 0 2rem;
+    }
+
+    .work-overview__inner {
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
+    }
+
+    .work-overview__info {
+        gap: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .work-overview__item {
+        grid-template-columns: 1fr;
+        gap: .5rem;
+    }
+
+    .work-overview__description {
+        margin-left: 1rem;
     }
 
     .work-problem__inner {
@@ -402,21 +446,8 @@
     }
     
     .work-summary__inner {
-        padding: 0 2rem;
-    }
-
-    .work-summary__info {
-        gap: 1rem;
-        padding: 2rem 1rem;
-    }
-
-    .work-summary__item {
-        grid-template-columns: 1fr;
-        gap: .5rem;
-    }
-
-    .work-summary__description {
-        margin-left: 1rem;
+        padding: 1rem 2rem;
+        margin: 6rem 2rem;
     }
 
     .work-detail__buttons {
