@@ -130,7 +130,8 @@
 .work-solution__card--number {
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 1.5rem;
     color: var(--color--button);
 }
