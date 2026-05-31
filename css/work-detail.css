@@ -209,6 +209,11 @@
     width: 100%;
 }
 
+.work-design-feature__inner--2col {
+    grid-template-columns: repeat(2, minmax(0, 390px));
+    gap: 2rem;
+}
+
 .work-design-feature__card {
     display: grid;
     grid-template-rows: 150px auto 1fr;
@@ -248,16 +253,47 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 
-.work-design-feature__color--bg {
+/* 甘彩堂の色パレッド */
+.work-design-feature__color--kansaido-bg {
     background-color: #F5F1E8;
 }
 
-.work-design-feature__color--accent {
+.work-design-feature__color--kansaido-accent {
     background-color: #209F4B;
 }
 
-.work-design-feature__color--text {
+.work-design-feature__color--kansaido-text {
     background-color: #2B2B2B;
+}
+
+/* ふくナビの色パレッド */
+.work-design-feature__color--hukunavi-bg {
+    background-color: #FFF5E7;
+}
+
+.work-design-feature__color--hukunavi-accent {
+    background-color: #FF9500;
+}
+
+.work-design-feature__color--hukunavi-text {
+    background-color: #333333;
+}
+
+/* 星君の色パレッド */
+.work-design-feature__color--hosikimi-bg {
+    background-color: #05050A;
+}
+
+.work-design-feature__color--hosikimi-accent {
+    background-color: #4B4B7A;
+}
+
+.work-design-feature__color--hosikimi-accent2 {
+    background-color: #FFF9C4;
+}
+
+.work-design-feature__color--hosikimi-text {
+    background-color: #DBDBDB;
 }
 
 .work-design-feature__color-name {
@@ -266,7 +302,7 @@
 
 .work-design-feature__card--img {
     width: 100%;
-    height: fit-content;
+    height: 100%;
     overflow: hidden;
     border-radius: 15px;
     border: 2px solid #C3C3C3;
@@ -274,6 +310,8 @@
 
 .work-design-feature__card--img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .work-design-feature__card--logo {

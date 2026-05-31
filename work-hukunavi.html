@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/work-detail.css">
         <script src="js/main.js"></script>
-        <meta name="description" content="架空の和菓子屋「甘彩堂」のブランドサイト兼ECサイト制作についてまとめた作品詳細ページです。課題設定、デザインの工夫、実装内容、制作を通して学んだことを掲載しています。">
+        <meta name="description" content="福井県の観光スポットを興味や条件から探せるWebアプリ「ふくナビ」の作品詳細ページです。作品概要、課題設定、検索体験の工夫、実装内容、制作を通して学んだことを掲載しています。">
     </head>
     <body>
         <header class="header"><a href="index.html"><span class="header__title">Sasakawa Shun's Portfolio</span></a></header>
@@ -75,7 +75,7 @@
                             </div>
                             <div  class="work-overview__item">
                                 <dt class="work-overview__term">対応状況</dt>
-                                <dd class="work-overview__description">PC版を中心に制作 / <br>スマートフォンにも対応済み</dd>
+                                <dd class="work-overview__description">PC / スマートフォン対応済み</dd>
                             </div>
                         </dl>
                     </div>
@@ -154,32 +154,32 @@
                     <p>旅行前のわくわく感を伝える、明るく親しみやすいUIを意識しました。
                     </p>
                 </div>
-                <div class="work-design-feature__inner">
+                <div class="work-design-feature__inner work-design-feature__inner--2col">
                     <div class="work-design-feature__card hover-lift">
                         <div class="work-design-feature__visual">
                             <div class="work-design-feature__color-palette">
                                 <div class="work-design-feature__color-item">
-                                    <span class="work-design-feature__color work-design-feature__color--bg"></span>
+                                    <span class="work-design-feature__color work-design-feature__color--hukunavi-bg"></span>
                                     <span class="work-design-feature__color-name">bg-<br>color</span>
                                 </div>
                                 <div class="work-design-feature__color-item">
-                                    <span class="work-design-feature__color work-design-feature__color--accent"></span>
+                                    <span class="work-design-feature__color work-design-feature__color--hukunavi-accent"></span>
                                     <span class="work-design-feature__color-name">accent-<br>color</span>
                                 </div>
                                 <div class="work-design-feature__color-item">
-                                    <span class="work-design-feature__color work-design-feature__color--text"></span>
+                                    <span class="work-design-feature__color work-design-feature__color--hukunavi-text"></span>
                                     <span class="work-design-feature__color-name">text-<br>color</span>
                                 </div>
                             </div>
                         </div>
-                        <h3 class="work-design-feature__card--title">落ち着いた配色</h3>
+                        <h3 class="work-design-feature__card--title">親しみやすい配色</h3>
                         <p class="work-design-feature__card--text">デザイン面では、旅行前の楽しさや親しみやすさを感じられるよう暖色を基調にしました。<br class="pc-br">
                         タイトルカラーにはオレンジを使用し、明るさや活発さを表現しています。<br class="pc-br">
                         </p>
                     </div>
                     <div class="work-design-feature__card hover-lift">
                         <div class="work-design-feature__visual">
-                            <div class="work-design-feature__card--img"><img src="images/margin-screenshot.png" alt="余白のスクリーンショット"></div>
+                            <div class="work-design-feature__card--img"><img src="images/hukunavi-ui.png" alt="分かりやすいUIのスクリーンショット"></div>
                         </div>
                         <h3 class="work-design-feature__card--title">分かりやすいUI</h3>
                         <p class="work-design-feature__card--text">観光案内としての分かりやすさを重視し、操作部分はできるだけシンプルに整理しました。<br class="pc-br">
@@ -196,7 +196,7 @@
                 </div>
                 <div class="work-ingenuity__inner">
                     <div class="work-ingenuity__card">
-                        <div class="work-ingenuity__card--img"><img src="images/filter-screenshot.png" alt="商品カードの絞り込み機能のスクリーンショット"></div>
+                        <div class="work-ingenuity__card--img"><img src="images/csv.png" alt="CSVデータのスクリーンショット"></div>
                         <div class="work-ingenuity__card-body">
                             <h3 class="work-ingenuity__card--title">CSVデータをもとに分類構造を整理</h3>
                             <p class="work-ingenuity__card-text">観光スポットの情報をCSVデータとして扱い、分類ごとに整理しました。<br>
@@ -205,16 +205,16 @@
                         </div>
                     </div>
                     <div class="work-ingenuity__card">
-                        <div class="work-ingenuity__card--img"><img src="images/hit-screenshot.png" alt="ヒット件数のスクリーンショット"></div>
+                        <div class="work-ingenuity__card--img"><img src="images/queryparameter.png" alt="クエリパラメータを含むコードのスクリーンショット"></div>
                         <div class="work-ingenuity__card-body">
                             <h3 class="work-ingenuity__card--title">クエリパラメータによる条件の受け渡し</h3>
-                            <p class="work-ingenuity__card-text">TOPページで選択した条件をURLに含め、検索結果ページで読み取る仕組みを実装しました。<br>
-                                これにより、ページ遷移後も選択内容に応じた結果を表示できるようにしています。
+                            <p class="work-ingenuity__card-text">TOPページで選択した分類条件をクエリパラメータとしてURLに付与し、検索結果ページ側で読み取る仕組みを実装しました。<br>
+                                ページ遷移後も条件に応じた結果を表示できるようにし、検索体験が途切れない構成にしています。
                             </p>
                         </div>
                     </div>
                     <div class="work-ingenuity__card">
-                        <div class="work-ingenuity__card--img"><img src="images/pages-screenshot.png" alt="複数ページのスクリーンショット"></div>
+                        <div class="work-ingenuity__card--img"><img src="images/resultspot.png" alt="カード表示のスクリーンショット"></div>
                         <div class="work-ingenuity__card-body">
                             <h3 class="work-ingenuity__card--title">地図とカード表示の組み合わせ</h3>
                             <p class="work-ingenuity__card-text">検索結果では、観光スポットのカード表示と地図表示を組み合わせました。<br>
