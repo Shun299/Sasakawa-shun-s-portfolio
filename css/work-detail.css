@@ -31,6 +31,8 @@
 
 .work-detail-hero__image img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .work-detail-hero__sentence {
@@ -173,6 +175,10 @@
     margin-top: 6rem;
 }
 
+.work-solution__inner--3col {
+    grid-template-columns: repeat(3, minmax(0, 350px));
+}
+
 .work-solution__card {
     display: grid;
     position: relative;
@@ -196,6 +202,10 @@
 
 .work-solution__card--title {
     font-size: 2.25rem;
+}
+
+.work-solution__card--long-title {
+    font-size: 1.5rem;
 }
 
 /* デザインのポイントセクション */
